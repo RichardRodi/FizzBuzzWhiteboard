@@ -1,16 +1,16 @@
 
-public string FizzBuzz(int Number)
+public void FizzBuzz()
 {
-if (number % 3 == 0 && % 5 == 0)
-{
-    Console.WriteLine("Fizzbuzz")
-}
-else if (number % 3 == 0 )
-{ 
-    Console.Writeline("Fizz")
-}
-else if( number % 5 == 0)
-{
-    Console.WriteLine(Buzz)
-}
+    for (int i = 1; i < 101; i++)
+    {
+        if (i % 3 == 0 && i % 5 == 0)
+            Console.WriteLine($"{i}: FizzBuzz");
+        else if (i % 3 == 0)
+            Console.WriteLine($"{i}: Fizz");
+        else if (i % 5 == 0)
+            Console.WriteLine($"{i}: Buzz");
+        else
+            Console.WriteLine($"{i}: x");
+    }
+
 }
